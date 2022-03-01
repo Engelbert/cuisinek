@@ -14,7 +14,7 @@ collections:
     files:
       - label: "Home"
         name: "home"
-        file: "src/pages/index.md"
+        file: "src/pages/index.astro"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}

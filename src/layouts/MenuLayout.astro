@@ -1,5 +1,6 @@
 ---
 // src/layouts/Page.astro
+import { Markdown } from 'astro/components';
 const {content} = Astro.props;
 ---
 <html>
@@ -70,11 +71,11 @@ const {content} = Astro.props;
     <slot />
 
 	<h2>Voorgerecht</h2>
-	{content.voor}
+	<Markdown>{content.voor}</Markdown>
 	<h2>Hoofdgerecht</h2>
-	{content.hoofd}
+	<Markdown>{content.hoofd}</Markdown>
 	<h2>Nagerecht</h2>
-	{content.na}
+	<Markdown>{content.na}</Markdown>
 
 </body>
 </html>
