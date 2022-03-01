@@ -1,17 +1,18 @@
 {
-  "name": "@example/minimal",
+  "name": "@engelbert/astro-tailwindcss-netlifycms-base",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "TAILWIND_MODE=watch astro dev",
     "build": "astro build",
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^0.20.12"
+    "astro": "latest"
   },
   "dependencies": {
-    "netlify-cms-app": "^2.15.57"
+    "netlify-cms-app": "latest",
+    "tailwindcss": "latest"
   }
 }
