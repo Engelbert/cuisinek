@@ -38,7 +38,7 @@ collections:
         file: "src/pages/menu.md"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
+          - {label: Body, name: body, widget: markdown}
           - {label: "Voorgerecht", name: "voor", widget: "markdown"}
           - {label: "Hoofdgerecht", name: "hoofd", widget: "markdown"}
           - {label: "Nagerecht", name: "na", widget: "markdown"}
