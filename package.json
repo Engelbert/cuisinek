@@ -9,7 +9,8 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "latest"
+    "astro": "latest",
+    "snowpack": "^3.8.8"
   },
   "dependencies": {
     "netlify-cms-app": "latest",

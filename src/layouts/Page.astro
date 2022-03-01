@@ -1,12 +1,13 @@
 ---
-const {lang = 'en', title = 'untitled'} = Astro.props;
+// src/layouts/Page.astro
+const {content} = Astro.props;
 ---
-<html lang={lang}>
+<html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-	<title>{title}</title>
+	<title>{content.title}</title>
 	<meta name="description" content="description here">
 	<meta name="keywords" content="keywords here">
 	<meta name="robots" content="all">

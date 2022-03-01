@@ -1,4 +1,6 @@
 ---
+# src/pages/menu.md
+layout: ../layouts/Page.astro
 title: Menu
 date: 2021-10-29T02:21:43.412Z
 thumbnail: http://placecorgi.com/1280/720

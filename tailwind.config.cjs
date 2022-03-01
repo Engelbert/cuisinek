@@ -3,7 +3,6 @@ module.exports = {
         './public/**/*.html',
         './src/**/*.{css,astro,js,jsx,svelte,ts,tsx,vue}',
     ],
-    purge: [],
     theme: {
         fontFamily: {
         sans: ['Nunito', 'sans-serif'],
