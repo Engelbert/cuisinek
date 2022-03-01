@@ -38,6 +38,4 @@ na: |-
 
   > €3.50/persoon
 ---
-MENU 
-
 vrijdag 28 januari 2022
