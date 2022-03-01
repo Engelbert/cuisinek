@@ -3,10 +3,10 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "asset:*": ["src/assets/*?url"],
-      "component:*": ["src/components/*"],
-      "layout:*": ["src/layouts/*"],
-      "page:*": ["src/pages/*"]
+      "@assets/*": ["src/assets/*?url"],
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@pages/*": ["src/pages/*"]
     }
   }
 }
