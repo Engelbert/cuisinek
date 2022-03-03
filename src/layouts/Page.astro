@@ -1,73 +1,29 @@
 ---
 // src/layouts/Page.astro
-const {content} = Astro.props;
+import HtmlHead from '../components/Head.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Extra from '../components/Extra.astro';
+import Extra2 from '../components/Extra2.astro';
+import Extra3 from '../components/Extra3.astro';
+import Extra4 from '../components/Extra4.astro';
+const {title} = Astro.props;
 ---
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="format-detection" content="telephone=no">
-	<title>{content.title}</title>
-	<meta name="description" content="description here">
-	<meta name="keywords" content="keywords here">
-	<meta name="robots" content="all">
-	
 
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-	<script src="https://cdn.tailwindcss.com"></script>
-	<link rel="stylesheet" href={Astro.resolve("../styles/global.css")}>
+<HtmlHead title="CuisineK"/>
 
-	<!-- Chrome for Android theme color -->
-	<meta name="theme-color" content="#ffffff">
-
-	<!-- Add to homescreen for Chrome on Android -->
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="application-name" content="vladko.dev">
-	<link rel="icon" sizes="https://cdn.vladko.dev/any"
-		href="https://cdn.vladko.dev/images/SVG/vladko-logo.svg">
-
-	<!-- Add to homescreen for Safari on iOS -->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
-	<meta name="apple-mobile-web-app-title" content="vladko.dev">
-	<link rel="apple-touch-icon" href="https://cdn.vladko.dev/images/SVG/vladko-logo.svg">
-
-
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-640-1136.png"
-		media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-750-1334.png"
-		media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-1242-2208.png"
-		media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-1125-2436.png"
-		media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-828-1792.png"
-		media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-1242-2688.png"
-		media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-1536-2048.png"
-		media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-1668-2224.png"
-		media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-1668-2388.png"
-		media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-2048-2732.png"
-		media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
-		rel="apple-touch-startup-image"/>
-</head>
 <body>
-
-    <slot />
+	
+		<Header title="CuisineK" />
+		<Hero title="CuisineK" />
+		<Extra title="CuisineK" />
+		<Extra2 title="CuisineK" />
+		<Extra3 title="CuisineK" />
+		<Extra4 title="CuisineK" />
+		<main>
+			<slot />
+		</main>
+		<Footer title="Cuisine K"/>
 
 </body>
-</html>

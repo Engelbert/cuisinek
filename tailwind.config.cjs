@@ -5,9 +5,9 @@ module.exports = {
     ],
     theme: {
         fontFamily: {
-        sans: ['Nunito', 'sans-serif'],
-        display: ['Nunito', 'sans-serif'],
-        body: ['Nunito', 'sans-serif']
+        sans: ['Caviar Dreams', 'sans-serif'],
+        display: ['Caviar Dreams', 'sans-serif'],
+        body: ['Reading', 'sans-serif']
         },
         extend: {}
     },

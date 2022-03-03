@@ -13,6 +13,8 @@
     "snowpack": "^3.8.8"
   },
   "dependencies": {
+    "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.5",
     "netlify-cms-app": "latest",
     "tailwindcss": "latest"
   }

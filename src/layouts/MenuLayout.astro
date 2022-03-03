@@ -1,81 +1,49 @@
 ---
-// src/layouts/Page.astro
+// src/layouts/MenuLayout.astro
 import { Markdown } from 'astro/components';
-const {content} = Astro.props;
+import HtmlHead from '../components/Head.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+const { content } = Astro.props;
+const {title, voor, hoofd, na} = content;
 ---
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="format-detection" content="telephone=no">
-	<title>{content.title}</title>
-	<meta name="description" content="description here">
-	<meta name="keywords" content="keywords here">
-	<meta name="robots" content="all">
-	
 
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-	<script src="https://cdn.tailwindcss.com"></script>
-	<link rel="stylesheet" href={Astro.resolve("../styles/global.css")}>
+<HtmlHead title="CuisineK"/>
 
-	<!-- Chrome for Android theme color -->
-	<meta name="theme-color" content="#ffffff">
-
-	<!-- Add to homescreen for Chrome on Android -->
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="application-name" content="vladko.dev">
-	<link rel="icon" sizes="https://cdn.vladko.dev/any"
-		href="https://cdn.vladko.dev/images/SVG/vladko-logo.svg">
-
-	<!-- Add to homescreen for Safari on iOS -->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
-	<meta name="apple-mobile-web-app-title" content="vladko.dev">
-	<link rel="apple-touch-icon" href="https://cdn.vladko.dev/images/SVG/vladko-logo.svg">
-
-
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-640-1136.png"
-		media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-750-1334.png"
-		media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-1242-2208.png"
-		media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-1125-2436.png"
-		media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-828-1792.png"
-		media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-1242-2688.png"
-		media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-1536-2048.png"
-		media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-1668-2224.png"
-		media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-1668-2388.png"
-		media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
-		rel="apple-touch-startup-image"/>
-	<link href="https://cdn.vladko.dev/images/pwa/apple-splash-2048-2732.png"
-		media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
-		rel="apple-touch-startup-image"/>
-</head>
 <body>
-
-    <slot />
-
-	<h2>Voorgerecht</h2>
-	<Markdown>{content.voor}</Markdown>
-	<h2>Hoofdgerecht</h2>
-	<Markdown>{content.hoofd}</Markdown>
-	<h2>Nagerecht</h2>
-	<Markdown>{content.na}</Markdown>
-
+<!-- scoped Astro styles that apply only to the current page (not to children or other components) -->
+<style>
+	h4 {
+	text-transform: capitalize;
+	font-family: "Caviar Dreams";
+	font-weight: 600;
+	text-align: left;
+	}
+	blockquote {
+	display: flex;
+  	justify-content: flex-end;
+	text-align: right;
+	}
+	p {
+	text-align: left;
+	}
+</style>
+	<div class="md:flex flex-col md:container md:mx-auto text-center sm:text-left justify-center">
+		<Header title="Cuisine K" />
+		<Hero />
+		<main>
+			<h1 class="text-center">{title}</h1>
+			<slot/>
+			<h3 class="text-left">Voorgerecht</h3>
+		 		<Markdown>{voor}</Markdown>
+			<h3 class="text-left">Hoofdgerecht</h3>
+				<Markdown>{hoofd}</Markdown>
+			<h3 class="text-left">Nagerecht</h3>
+		 		<Markdown>{na}</Markdown>
+			
+			
+		</main>
+		<Footer title="Cuisine K"/>
+	</div>
 </body>
-</html>
