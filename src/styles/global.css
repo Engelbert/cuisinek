@@ -14,4 +14,12 @@
     h3 {
         @apply text-3xl;
     }
+    @font-face {font-family: "Caviar Dreams";
+        src: url("assets/fonts/Caviar-Dreams.eot"); /* IE9*/
+        src: url("assets/fonts/Caviar-Dreams.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("assets/fonts/Caviar-Dreams.woff2") format("woff2"), /* chrome、firefox */
+        url("assets/fonts/Caviar-Dreams.woff") format("woff"), /* chrome、firefox */
+        url("assets/fonts/Caviar-Dreams.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        url("assets/fonts/Caviar-Dreams.svg#Caviar-Dreams") format("svg"); /* iOS 4.1- */
+    }
 }
