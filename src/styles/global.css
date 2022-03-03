@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url(https://db.onlinewebfonts.com/c/b272450a19485b6e0cefb63200382c4a?family=Caviar+Dreams);
-@import url(https://db.onlinewebfonts.com/c/ddb1440d0feb587a190cd316f51f57d3?family=Reading);
+
 @layer base {
     h1 {
         @apply text-4xl;
