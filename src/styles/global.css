@@ -15,11 +15,19 @@
         @apply text-3xl;
     }
     @font-face {font-family: "Caviar Dreams";
-        src: url("assets/fonts/Caviar-Dreams.eot"); /* IE9*/
-        src: url("assets/fonts/Caviar-Dreams.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-        url("assets/fonts/Caviar-Dreams.woff2") format("woff2"), /* chrome、firefox */
-        url("assets/fonts/Caviar-Dreams.woff") format("woff"), /* chrome、firefox */
-        url("assets/fonts/Caviar-Dreams.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-        url("assets/fonts/Caviar-Dreams.svg#Caviar-Dreams") format("svg"); /* iOS 4.1- */
+        src: url("fonts/Caviar-Dreams.eot"); /* IE9*/
+        src: url("fonts/Caviar-Dreams.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("fonts/Caviar-Dreams.woff2") format("woff2"), /* chrome、firefox */
+        url("fonts/Caviar-Dreams.woff") format("woff"), /* chrome、firefox */
+        url("fonts/Caviar-Dreams.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        url("fonts/Caviar-Dreams.svg#Caviar-Dreams") format("svg"); /* iOS 4.1- */
+    }
+    @font-face {font-family: "Reading";
+        src: url("fonts/Reading.eot"); /* IE9*/
+        src: url("fonts/Reading.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("fonts/Reading.woff2") format("woff2"), /* chrome、firefox */
+        url("fonts/Reading.woff") format("woff"), /* chrome、firefox */
+        url("fonts/Reading.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        url("fonts/Reading.svg#Reading") format("svg"); /* iOS 4.1- */
     }
 }
