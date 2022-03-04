@@ -1,10 +1,15 @@
 ---
 const {title} = Astro.props;
 ---
-<footer class="bg-gray-800 border-t border-gray-200 font-display">
-      <div class="container flex justify-between px-4 py-8 mx-auto lg:justify-between">
+<footer class="font-display bg-repeat bg-left"
+style="
+background-image: url('/images/header-bg.png');
+background-size: 750px 300px;
+background-blend-mode: normal;
+">
+      <div class="container flex justify-between px-4 py-6 mx-auto lg:justify-between">
         <div class="flex flex-wrap">
-          <ul class="flex items-center space-x-4 text-white">
+          <ul class="flex items-center space-x-4 font-sans md:text-center sm:leading-none text-neutral-700 hover:text-neutral-600 transition ease-in-out delay-150 duration-300">
             <li>
                 © Copyright 2022. All right reserved, {title}.
             </li>

@@ -6,36 +6,36 @@ voor: |-
 
   Nacho’s met gehakt, gemalen cheddar, Mexicaanse salsa en homemade guacamole
 
-  > €6/persoon
+  > €6
 
   #### Soep
 
   Erwtensoep met rookworst en spek
 
-  > €7/persoon
+  > €7
 hoofd: >-
   Gehaktbrood met stroganoffsaus, aardappelgratin en gegrilde provencaalse
   groente
 
 
-  > €13/persoon
+  > €13
 
 
   Macaroni met kaassaus en hesp uit de oven
 
 
-  > €11/persoon
+  > €11
 
 
   Vispannetje met witte wijnsaus, prei en spinazie met aardappelpuree
 
 
-  > €16/persoon
+  > €16
 na: |-
   Chocolademousse
 
-  > €3.50/persoon
-
+  > €3.50
+date: vrijdag 28 januari 2022
 
 
 ---

@@ -10,11 +10,11 @@
   },
   "devDependencies": {
     "astro": "latest",
-    "snowpack": "^3.8.8"
+    "snowpack": "latest"
   },
   "dependencies": {
-    "@headlessui/react": "^1.5.0",
-    "@heroicons/react": "^1.0.5",
+    "@headlessui/react": "latest",
+    "@heroicons/react": "latest",
     "netlify-cms-app": "latest",
     "tailwindcss": "latest"
   }

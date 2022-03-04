@@ -3,17 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-    h1 {
-        @apply text-4xl;
-    }
-
-    h2 {
-        @apply text-4xl;
-    }
-
-    h3 {
-        @apply text-3xl;
-    }
     @font-face {font-family: "Caviar Dreams";
         src: url("fonts/Caviar-Dreams.eot"); /* IE9*/
         src: url("fonts/Caviar-Dreams.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
