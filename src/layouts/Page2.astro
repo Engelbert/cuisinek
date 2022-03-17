@@ -1,0 +1,19 @@
+---
+// src/layouts/Page.astro
+import HtmlHead from '../components/Head.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+const {title} = Astro.props;
+---
+
+<HtmlHead title="CuisineK"/>
+
+<body>
+	
+		<Header title="CuisineK" />
+		<main>
+			<slot />
+		</main>
+		<Footer title="Cuisine K"/>
+
+</body>
