@@ -1,12 +1,12 @@
 ---
-// src/pages/bestellen.astro
+// src/pages/contact.astro
 import MySiteLayout from '../layouts/Page2.astro';
 
 ---
 <html>
 <MySiteLayout>
 
-<form name="contact" netlify-honeypot="bot-field" action="succes" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+<form name="contact" netlify-honeypot="bot-field" action="/success" method="POST" data-netlify="true">
   <p class="hidden">
     <label>
       Don’t fill this out if you’re human: <input name="bot-field" />
@@ -27,13 +27,10 @@ import MySiteLayout from '../layouts/Page2.astro';
   <p>
     <label>Message: <textarea name="message"></textarea></label>
   </p>
-  <div data-netlify-recaptcha="true"></div>
   <p>
     <button type="submit">Send</button>
   </p>
 </form>
 
-</MySiteLayout>
-</html>
 </MySiteLayout>
 </html>
